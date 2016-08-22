@@ -1,4 +1,5 @@
 # Load in our dependencies
+# DEV: We can't name this file `sublime.py` otherwise we get issues with UnitTesting
 import sublime
 from unittest import TestCase
 
@@ -10,6 +11,6 @@ class TestSublimeVersion(TestCase):
         A sublime package
             supplies a valid version
         """
-        # Retrieve and assert our version
         version = sublime.version()
-        self.assertEqual(version, 2000)
+        # e.g. 3114
+        self.assertRegexpMatches(version, r'3\d{3}')
