@@ -5,7 +5,12 @@ sublime-core-tests
    :target: https://travis-ci.org/twolfson/sublime-core-tests
    :alt: Build Status
 
-Modest test suite to verify Sublime Text functionality
+Modest test suite to verify `Sublime Text`_ functionality
+
+This was built to verify API closeness for clones of `Sublime Text`_ (e.g. `suplemon`_)
+
+.. _`Sublime Text`: http://www.sublimetext.com/
+.. _ `suplemon`: https://github.com/richrd/suplemon
 
 Getting Started
 ---------------
