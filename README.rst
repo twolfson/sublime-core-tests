@@ -14,19 +14,25 @@ This was built to verify API closeness for clones of `Sublime Text`_ (e.g. `supl
 
 Getting Started
 ---------------
-Install the module with: ``pip install sublime_core_tests``
+To run the test suite in a local copy of Sublime Text, run the following:
 
-.. code:: python
+.. code:: bash
 
-    from sublime_core_tests import run
-    run()
+    # Clone our repository
+    git clone https://github.com/twolfson/sublime-core-tests
+    cd sublime-core-tests
+
+    # Install our repository as a package so UnitTesting can find it
+    ln -s "$PWD" ~/.config/sublime-text-3/Packages/sublime-core-tests
+
+    # Launch Sublime Text in the local folder
+    subl .
+
+    # By hand: Run our tests via UnitTesting
+    #   Command Palette -> UnitTesting: Test Current project
 
 Documentation
 -------------
-_(Coming soon)_
-
-Examples
---------
 _(Coming soon)_
 
 Contributing
